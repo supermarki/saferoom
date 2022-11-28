@@ -1,0 +1,1808 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper .line {
+  width: 50%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #63A4DA;
+  margin-top: 90px;
+}
+
+.wrapper .line_right {
+  float: right;
+}
+
+.wrapper .line_left {
+  float: left;
+}
+
+.button {
+  width: 300px;
+  height: 60px;
+  background: #63A4DA;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button .button__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #5e98c9;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .header__vector {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container .header::before {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 40px solid rgba(204, 133, 93, 0.5);
+  border-radius: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 55%;
+  left: -150px;
+}
+
+.container .header::after {
+  content: '';
+  display: block;
+  width: 400px;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 40px solid rgba(204, 133, 93, 0.5);
+  border-radius: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 63%;
+  right: -200px;
+}
+
+.container .header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container .header .header__deco {
+  position: absolute;
+  z-index: -1;
+}
+
+.container .header .header__deco1 {
+  top: 48%;
+  left: 14%;
+}
+
+.container .header .header__deco2 {
+  top: 75%;
+  left: 27%;
+}
+
+.container .header .header__deco3 {
+  top: 96%;
+  left: 18%;
+}
+
+.container .header .header__deco4 {
+  top: 78%;
+  right: 24%;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.container .header .header__deco5 {
+  top: 65%;
+  right: 14%;
+  -webkit-transform: rotate(53deg);
+          transform: rotate(53deg);
+}
+
+.container .header .header__title {
+  width: 100%;
+  height: 120px;
+  background-color: #63A4DA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .header__title .header__headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container .header .header__wrapper_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc( 100vh - 270px);
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .header__wrapper_display .header__text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  color: #CC855D;
+}
+
+.container .header .header__wrapper_display .header__down {
+  width: 80px;
+  height: 80px;
+  -webkit-animation: slideDown 5s infinite;
+          animation: slideDown 5s infinite;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  margin-top: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3.5px solid #63A4DA;
+}
+
+.container .header .header__wrapper_display .header__down:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  border-color: #CC855D;
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.container .header .header__wrapper .nav {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .header__wrapper .nav .nav__logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.container .header .header__wrapper .nav .nav__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3F2207;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 0 10px;
+}
+
+.container .header .header__wrapper .nav .nav__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #CC855D;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.container .header .header__wrapper .nav .nav__link:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.section_margin-top {
+  margin-top: 155px;
+}
+
+.section__headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #63A4DA;
+  position: relative;
+  left: 55px;
+}
+
+.section__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42px;
+  color: #3F2207;
+  width: 100%;
+}
+
+.section__text span {
+  font-weight: 700;
+  color: #CC855D;
+}
+
+*::-moz-selection {
+  background-color: #63A4DA;
+  color: #ffffff;
+}
+
+*::selection {
+  background-color: #63A4DA;
+  color: #ffffff;
+}
+
+.section__text_after-psycho, .section__text_before-psycho {
+  position: relative;
+}
+
+.section__text_after-psycho::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/decoration/rectangle_light.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 70px;
+  right: 25%;
+}
+
+.section__text_before-psycho::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/decoration/rectangle_light.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -70px;
+  left: 15%;
+}
+
+.section {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 90px;
+}
+
+.section .section__wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .section__wrapper .section__pic_about {
+  background-image: url(../img/content/about-us.svg);
+  background-size: 84.5%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  height: 100%;
+}
+
+.section .section__wrapper .faq__pic {
+  background-image: url(../img/content/faq.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+}
+
+.section .section__wrapper div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section .section__wrapper div .section__headline_before::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/decoration/rectangle_heading.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 7.5px;
+  left: -55px;
+}
+
+.psychologists {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42px;
+  color: #3F2207;
+}
+
+.psychologists__swiper {
+  max-width: 620px;
+  min-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.psychologists__swiper-wrapper {
+  width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.psychologists__slide {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 100%;
+  background: #63A4DA;
+  -webkit-transition: width 1s, height 1s, font-size 1s;
+  transition: width 1s, height 1s, font-size 1s;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+.psychologists__slide:nth-child(1) {
+  background: url(../img/psycho/maryna.JPG);
+  background-size: cover;
+}
+
+.psychologists__slide:nth-child(2) {
+  background: url(../img/psycho/katya.JPG);
+  background-size: cover;
+}
+
+.psychologists__slide:nth-child(3) {
+  background: url(../img/psycho/zoryana.jpg);
+  background-size: cover;
+}
+
+.psychologists__slide_active {
+  width: 250px !important;
+  height: 250px !important;
+  font-size: 24px;
+}
+
+.psychologists__sign {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(204, 133, 93, 0.5);
+  margin-bottom: 15px;
+  font-size: inherit;
+}
+
+.psychologists .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.psychologists .hidden {
+  display: none;
+}
+
+.psychologists__name {
+  font-size: 20px;
+  font-size: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.psychologists__details {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(99, 164, 218, 0.5);
+  border-radius: 100%;
+}
+
+.psychologists__details-link {
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+}
+
+.psychologists__pagination {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.psychologists__pagination .dots {
+  width: 25px;
+  height: 25px;
+  background: #cacaca;
+  border-radius: 100%;
+}
+
+.psychologists__pagination .dots_active {
+  background: #63A4DA;
+  -webkit-transition: .5s background;
+  transition: .5s background;
+}
+
+.psychologists__content {
+  max-width: 640px;
+}
+
+.psychologists__content .title, .psychologists__content .text {
+  text-align: right;
+}
+
+.psycho__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.section__headline_right {
+  text-align: right;
+  left: 0;
+  margin-right: 55px;
+}
+
+.section__headline_right::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/decoration/rectangle_heading.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 7.5px;
+  right: -55px;
+}
+
+.text_padding {
+  padding-top: 60px;
+}
+
+.wrapper_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper_center .section__headline_center {
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.wrapper_center .section__headline_center::before, .wrapper_center .section__headline_center::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/decoration/rectangle_heading.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 7.5px;
+}
+
+.wrapper_center .section__headline_center::before {
+  left: -55px;
+}
+
+.wrapper_center .section__headline_center::after {
+  right: -55px;
+}
+
+.swiper {
+  width: 100%;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+
+.swiper-slide {
+  height: 500px !important;
+  text-align: center;
+  border: 2px solid #F2F1F1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.swiper-pagination > span {
+  width: 80px !important;
+  height: 10px !important;
+  border-radius: 15px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #cacaca;
+}
+
+.swiper-pagination-bullet-active, .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #63A4DA;
+}
+
+.slide__headline {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  color: #63A4DA;
+  margin: 20px 20px;
+}
+
+.slide__text {
+  color: #CC855D;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 42px;
+  margin: 40px 0;
+}
+
+.slide__picture {
+  width: 75%;
+  background-repeat: no-repeat;
+  height: 50%;
+  background-position: center;
+  background-size: 100%;
+}
+
+.slide__picture_train1 {
+  background-image: url(../img/trainings/training1.svg);
+}
+
+.slide__picture_train2 {
+  background-image: url(../img/trainings/training2.svg);
+  background-size: 90%;
+}
+
+.slide__picture_train3 {
+  background-image: url(../img/trainings/training3.svg);
+}
+
+.slide__picture_train4 {
+  background-image: url(../img/trainings/training4.svg);
+  background-size: 86%;
+}
+
+.slide__picture_train5 {
+  background-image: url(../img/trainings/training5.svg);
+}
+
+.slide__picture_train6 {
+  background-image: url(../img/trainings/training6.svg);
+  background-size: 85%;
+}
+
+.section__text_color {
+  color: #CC855D;
+}
+
+.faq__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq__info details {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.faq__info details summary {
+  width: 100%;
+  min-height: 60px;
+  border: 2px solid #F2F1F1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.faq__info details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary:before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/decoration/rectangle_faq.svg);
+  margin-right: 25px;
+  z-index: 2;
+}
+
+details[open] summary:before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/decoration/rectangle_faq.svg);
+  margin-right: 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.text_padding-faq {
+  padding-top: 20px;
+}
+
+.section__wrapper_margin-top {
+  margin-top: 60px;
+}
+
+.founders {
+  width: 100%;
+  min-height: 350px;
+}
+
+.founders .founders__headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #63A4DA;
+  position: relative;
+  margin-top: 60px;
+}
+
+.swiper2 {
+  width: 100%;
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper2 .swiper-wrapper2 {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper2 .swiper-wrapper2 img {
+  width: 300px;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 6px solid #CC855D;
+  border-radius: 300px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(204, 133, 93, 0.2)), to(rgba(204, 133, 93, 0.2)));
+  background: linear-gradient(0deg, rgba(204, 133, 93, 0.2), rgba(204, 133, 93, 0.2));
+}
+
+.swiper2 {
+  min-height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide2 {
+  border: 6px solid #CC855D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 300px;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide2 .slide__info {
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px) brightness(0.75);
+          backdrop-filter: blur(10px) brightness(0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide2 .slide__info span {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide2 .slide__info:hover {
+  opacity: 1;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide {
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_solyana {
+  background-image: url(../img/team/solyana.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_tori {
+  background-image: url(../img/team/tori.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_danya {
+  background-image: url(../img/team/dania.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_markiian {
+  background-image: url(../img/team/markiian.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_sonya_ {
+  background-image: url(../img/team/sonya_.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_sonya {
+  background-image: url(../img/team/sonya.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_maksym {
+  background-image: url(../img/team/maksym.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_anna {
+  background-image: url(../img/team/anna.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_katya {
+  background-image: url(../img/team/katya.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_diana {
+  background-image: url(../img/team/diana.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_bereza {
+  background-image: url(../img/team/bereza.jpg);
+}
+
+.swiper2 .swiper-wrapper .swiper-slide_yarik {
+  background-image: url(../img/team/yarik.jpg);
+}
+
+.dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+}
+
+.dark-bg .psycho__info {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: calc( 50% - 300px);
+  left: calc( 50% - 200px);
+  background-color: #ffffff;
+  border: 2px solid #F2F1F1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  display: none;
+}
+
+.dark-bg .psycho__info a {
+  position: relative;
+  top: 25px;
+  left: 10px;
+  text-decoration: none;
+  color: #CC855D;
+  font-size: 25px;
+  width: 100%;
+}
+
+.dark-bg .psycho__info .modal__heading {
+  color: #CC855D;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 42px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dark-bg .psycho__info .modal__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  color: #3F2207;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 450px;
+  background-color: #63A4DA;
+  margin-top: 90px;
+  color: #ffffff;
+}
+
+.footer .section__wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .section__wrapper .footer__contacts {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .section__wrapper .footer__contacts .footer__headline {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer .section__wrapper .footer__contacts .footer__contact {
+  font-size: 24px;
+  line-height: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer .section__wrapper .footer__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .section__wrapper .footer__partners .partners__first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+}
+
+.footer .section__wrapper .footer__partners .partners__first-line a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40%;
+  height: 100%;
+}
+
+.footer .section__wrapper .footer__partners .partners__first-line .uvs {
+  background-image: url(../img/partners/uvs.svg);
+}
+
+.footer .section__wrapper .footer__partners .partners__first-line .upl {
+  background-image: url(../img/partners/upl.svg);
+}
+
+.footer .section__wrapper .footer__partners .partners__second-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+}
+
+.footer .section__wrapper .footer__partners .partners__second-line .unatstvo {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40%;
+  height: 100%;
+  background-image: url(../img/partners/unatstvo.svg);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu__btn > span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #3F2207;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__btn > span::before, .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #3F2207;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  z-index: 100;
+  padding: 80px 0;
+  list-style: none;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  color: #3F2207;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.text_padding-sides {
+  padding: 0 20px;
+}
+
+@media screen and (max-height: 580px) {
+  .header__vector {
+    display: none;
+  }
+  .container .header .header__wrapper_display .header__down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 36%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 36%;
+  }
+  .psychologists .psycho__wrapper article .content {
+    width: 100%;
+  }
+  .psychologists .psycho__wrapper article .content .text {
+    text-align: center;
+    width: 100%;
+  }
+  .psychologists .psycho__wrapper .psychologists__swiper {
+    margin-top: 60px;
+  }
+  .slide__picture {
+    background-size: 73%;
+  }
+  .section .section__wrapper .faq__pic {
+    width: 30%;
+  }
+  .section .section__wrapper .faq__info {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header__vector {
+    display: none;
+  }
+  .header__deco {
+    display: none;
+  }
+  .section {
+    min-height: 450px;
+  }
+  .section .section__wrapper {
+    min-height: 100%;
+  }
+  .section .section__wrapper div {
+    width: 100%;
+  }
+  .section .section__wrapper .section__pic_about {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .section .section__wrapper .faq__pic {
+    display: none;
+  }
+  .section .section__wrapper .faq__info {
+    width: 100%;
+  }
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 33%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 33%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container .header {
+    height: 700px;
+  }
+  .container .header::after, .container .header::before {
+    display: none;
+  }
+  .container .header .header__wrapper_display .header__down {
+    display: none;
+  }
+  .section_margin-top {
+    margin-top: 0;
+  }
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 30%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 30%;
+  }
+  .footer .section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .section__wrapper .footer__contacts {
+    width: 100%;
+    height: 400px;
+  }
+  .footer .section__wrapper .footer__partners {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container .header {
+    max-height: 500px;
+  }
+  .container .header .header__wrapper .nav {
+    display: none;
+  }
+  .section .section__wrapper .section__pic_about {
+    height: 400px;
+    background-size: 70%;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 26%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 26%;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .section .section__wrapper div {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .psychologists__swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 650px;
+  }
+  .section .section__wrapper .faq__info {
+    width: 95%;
+    margin-top: 0;
+  }
+  #about {
+    margin-top: 60px;
+  }
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 20%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 20%;
+  }
+  .faq__info details summary {
+    padding: 0 20px;
+  }
+  .faq__info details summary::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section .section__wrapper .section__pic_about {
+    background-size: 90%;
+  }
+  .swiper-pagination > span {
+    width: 20px !important;
+    height: 10px !important;
+    border-radius: 15px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faq__info details summary {
+    width: 95%;
+  }
+  .container {
+    margin-top: 65px;
+  }
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 15%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .header .header__title .header__headline {
+    font-size: 52px;
+  }
+  .psychologists .psycho__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .psychologists .psycho__wrapper article {
+    max-width: 100%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right {
+    text-align: center;
+    margin-right: 0;
+    position: relative;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before, .psychologists .psycho__wrapper article .section__headline_right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/decoration/rectangle_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 7.5px;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::before {
+    left: 7%;
+  }
+  .psychologists .psycho__wrapper article .section__headline_right::after {
+    right: 7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

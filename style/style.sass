@@ -1,0 +1,1214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block
+
+body 
+	line-height: 1
+
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap')
+
+$font-family: 'Montserrat', sans-serif
+
+*
+    outline: none
+
+body
+    overflow-x: hidden
+
+html
+    scroll-behavior: smooth
+    overflow-x: hidden
+    
+.wrapper
+    width: 90%
+    margin: 0 auto
+    .line
+        width: 50%
+        height: 5px
+        border-radius: 50px
+        background-color: #63A4DA
+        margin-top: 90px
+    .line_right
+        float: right
+    .line_left
+        float: left
+    
+.button
+    width: 300px
+    height: 60px
+    background: #63A4DA
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 50px
+    border: none
+    transition: .3s
+    .button__link
+        font-family: $font-family
+        font-weight: 700
+        font-size: 24px
+        line-height: 42px
+        color: #ffffff
+        text-decoration: none
+.button:hover
+    background-color: #5e98c9
+
+.container
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    .header__vector
+        position: absolute
+        top: 0
+        right: 0
+    .header::before
+        content: ''
+        display: block
+        width: 300px
+        height: 300px
+        box-sizing: border-box
+        border: 40px solid rgba(204, 133, 93, 0.5)
+        border-radius: 30px
+        transform: rotate(-45deg)
+        position: absolute
+        top: 55%
+        left: -150px
+    .header::after
+        content: ''
+        display: block
+        width: 400px
+        height: 400px
+        box-sizing: border-box
+        border: 40px solid rgba(204, 133, 93, 0.5)
+        border-radius: 30px
+        transform: rotate(-45deg)
+        position: absolute
+        top: 63%
+        right: -200px
+    .header
+        width: 100vw
+        height: 100vh
+        position: relative
+        .header__deco
+            position: absolute
+            z-index: -1
+        .header__deco1
+            top: 48%
+            left: 14%
+        .header__deco2
+            top: 75%
+            left: 27%
+        .header__deco3
+            top: 96%
+            left: 18%
+        .header__deco4
+            top: 78%
+            right: 24%
+            transform: rotate(270deg)
+        .header__deco5
+            top: 65%
+            right: 14%
+            transform: rotate(53deg)
+        .header__title
+            width: 100%
+            height: 120px
+            background-color: #63A4DA
+            display: flex
+            justify-content: center
+            align-items: center
+            .header__headline
+                font-family: $font-family
+                font-weight: 700
+                font-size: 72px
+                line-height: 88px
+                color: #FFFFFF
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+        .header__wrapper_display
+            display: flex
+            height: calc( 100vh - 270px )
+            width: 100%
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            .header__text
+                text-align: center
+                font-family: $font-family
+                font-weight: 700
+                font-size: 24px
+                line-height: 42px
+                color: #CC855D
+            .header__down 
+                width: 80px
+                height: 80px
+                animation: slideDown 5s infinite
+                background-color: #ffffff
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100px
+                margin-top: 10px
+                transition: .3s
+                box-sizing: border-box
+                border: 3.5px solid #63A4DA
+            .header__down:hover
+                animation-play-state: paused
+                border-color: #CC855D
+            @keyframes slideDown 
+                0% 
+                    transform: translateY(0)
+    
+                60% 
+                    transform: translateY(-20px)
+    
+                100% 
+                    transform: translateY(0px)
+        .header__wrapper
+            .nav
+                width: 100%
+                height: 150px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .nav__logo
+                    width: 100px
+                    height: 100px
+                    border-radius: 50px
+                .nav__link
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 29px
+                    color: #3F2207
+                    font-family: $font-family
+                    text-decoration: none
+                    position: relative
+                    display: block
+                    padding: 0 10px
+                .nav__link::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 2px
+                    border-radius: 50px
+                    background-color: #CC855D
+                    top: 34px
+                    bottom: 0
+                    left: 0
+                    transform-origin: right
+                    transform: scaleX(0)
+                    transition: transform .5s ease-in-out
+                .nav__link:hover::before
+                    transform-origin: left
+                    transform: scaleX(1)
+
+.section_margin-top
+    margin-top: 155px
+
+.section__headline
+    font-family: $font-family
+    font-weight: 600
+    font-size: 36px
+    line-height: 42px
+    color: #63A4DA
+    position: relative
+    left: 55px
+    
+.section__text
+    font-family: $font-family
+    font-weight: 400
+    font-size: 22px
+    line-height: 42px
+    color: #3F2207
+    width: 100%
+    span
+        font-weight: 700
+        color: #CC855D
+
+*::selection
+    background-color: #63A4DA
+    color: #ffffff
+
+.section__text_after-psycho, .section__text_before-psycho
+    position: relative
+    
+.section__text_after-psycho::after
+    content: ''
+    position: absolute
+    display: block
+    width: 28px
+    height: 28px
+    background-image: url(../img/decoration/rectangle_light.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    top: 70px
+    right: 25%
+
+.section__text_before-psycho::before
+    content: ''
+    position: absolute
+    display: block
+    width: 28px
+    height: 28px
+    background-image: url(../img/decoration/rectangle_light.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    top: -70px
+    left: 15%
+
+.section
+    width: 100% 
+    min-height: 300px
+    margin-top: 90px
+    .section__wrapper
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .section__pic_about
+            background-image: url(../img/content/about-us.svg)
+            background-size: 84.5%
+            background-repeat: no-repeat
+            background-position-x: right
+            background-position-y: center
+            height: 100%
+        .faq__pic
+            background-image: url(../img/content/faq.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            height: 500px
+        div
+            width: 50%
+            display: flex
+            flex-wrap: wrap
+            .section__headline_before::before
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+                left: -55px
+
+
+
+.psychologists 
+    margin-top: 90px
+    display: flex
+    justify-content: space-between
+    font-family: $font-family
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px
+    color: #3F2207
+    &__swiper 
+        max-width: 620px
+        min-height: 50%
+        display: flex
+        flex-direction: column
+        // justify-content: space-between
+        align-items: center
+        &-wrapper 
+            width: 620px
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &__slide 
+        width: 150px !important
+        height: 150px !important
+        border-radius: 100%
+        background: #63A4DA
+        transition: width 1s, height 1s, font-size 1s
+        overflow-x: hidden
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        position: relative
+        cursor: pointer
+        &:nth-child(1) 
+            background: url(../img/psycho/maryna.JPG)
+            background-size: cover
+        &:nth-child(2) 
+            background: url(../img/psycho/katya.JPG)
+            background-size: cover
+        &:nth-child(3) 
+            background: url(../img/psycho/zoryana.jpg)
+            background-size: cover
+        &_active 
+            width: 250px !important
+            height: 250px !important
+            font-size: 24px;
+    &__sign 
+        width: 100%
+        min-height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(204, 133, 93, 0.5)
+        margin-bottom: 15px
+        font-size: inherit
+    .active 
+        display: flex
+    .hidden 
+        display: none
+    &__name 
+        font-size: 20px
+        font-size: inherit
+        font-weight: 500
+        color: #ffffff
+        text-decoration: none
+    &__details 
+        width: 100%
+        height: 100%
+        display: none
+        justify-content: center
+        align-items: center
+        background: rgba(99, 164, 218, 0.5)
+        border-radius: 100%
+        &-link 
+            font-size: 28px
+            font-weight: 500
+            text-decoration: underline
+            color: #ffffff
+            text-align: center
+    &__pagination 
+        width: 100px
+        height: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 20px
+        .dots 
+            width: 25px
+            height: 25px
+            background: #cacaca
+            border-radius: 100%
+            &_active 
+                background: #63A4DA
+                transition: .5s background
+    &__content 
+        max-width: 640px
+        .title, .text 
+            text-align: right
+            
+.psycho__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: row-reverse  
+    // flex-wrap: wrap
+    
+.section__headline_right
+    text-align: right
+    left: 0
+    margin-right: 55px
+
+.section__headline_right::after
+    content: ''
+    position: absolute
+    display: block
+    width: 28px
+    height: 28px
+    background-image: url(../img/decoration/rectangle_heading.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    top: 7.5px
+    right: -55px
+
+.text_padding
+    padding-top: 60px
+
+.wrapper_center
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .section__headline_center
+        left: 0
+        right: 0
+        position: relative
+    .section__headline_center::before, .section__headline_center::after
+        content: ''
+        position: absolute
+        display: block
+        width: 28px
+        height: 28px
+        background-image: url(../img/decoration/rectangle_heading.svg)
+        background-repeat: no-repeat
+        background-size: cover
+        top: 7.5px
+    .section__headline_center::before
+        left: -55px
+    .section__headline_center::after
+        right: -55px
+    
+.swiper
+    width: 100%
+    min-height: 550px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    font-family: 'Montserrat', sans-serif
+    margin-top: 60px
+    overflow-x: hidden
+
+.swiper-slide
+    height: 500px !important
+    text-align: center
+    border: 2px solid #F2F1F1
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    overflow-x: hidden
+    box-sizing: border-box
+
+.swiper-pagination > span
+    width: 80px !important
+    height: 10px !important
+    border-radius: 15px !important
+
+.swiper-pagination-bullet
+    background: #cacaca
+
+.swiper-pagination-bullet-active, .swiper-pagination-bullet.swiper-pagination-bullet-active
+    background-color: #63A4DA
+
+.slide__headline
+    font-weight: 700
+    font-size: 26px
+    line-height: 42px
+    color: #63A4DA
+    margin: 20px 20px
+
+.slide__text
+    color: #CC855D
+    font-weight: 700
+    font-size: 22px
+    line-height: 42px
+    margin: 40px 0
+
+.slide__picture
+    width: 75%
+    background-repeat: no-repeat
+    height: 50%
+    background-position: center
+    background-size: 100%
+
+.slide__picture_train1
+    background-image: url(../img/trainings/training1.svg)
+
+.slide__picture_train2
+    background-image: url(../img/trainings/training2.svg)
+    background-size: 90%
+
+.slide__picture_train3
+    background-image: url(../img/trainings/training3.svg)
+
+.slide__picture_train4
+    background-image: url(../img/trainings/training4.svg)
+    background-size: 86%
+
+.slide__picture_train5
+    background-image: url(../img/trainings/training5.svg)
+
+.slide__picture_train6
+    background-image: url(../img/trainings/training6.svg)
+    background-size: 85%
+
+.section__text_color
+    color: #CC855D
+
+.faq__info
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    flex-direction: column
+    details
+        width: 100%
+        font-family: $font-family
+        font-weight: 400
+        font-size: 24px
+        line-height: 42px
+        margin: 0 auto
+        margin-top: 25px
+        summary
+            width: 100%
+            min-height: 60px
+            border: 2px solid #F2F1F1
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 30px
+            display: flex
+            align-items: center
+            padding-left: 25px
+            transition: .5s
+        summary::-webkit-details-marker
+            display: none
+
+details 
+    summary 
+        list-style: none
+
+details
+    summary:before 
+        content: ''
+        display: block
+        width: 28px
+        height: 28px
+        background-repeat: no-repeat
+        background-size: cover
+        background-image: url(../img/decoration/rectangle_faq.svg)
+        margin-right: 25px
+        z-index: 2
+
+details[open] summary:before 
+    content: ''
+    display: block
+    width: 28px
+    height: 28px
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../img/decoration/rectangle_faq.svg)
+    margin-right: 25px
+    transform: rotate(45deg)
+.text_padding-faq
+    padding-top: 20px
+
+.section__wrapper_margin-top
+    margin-top: 60px
+
+.founders
+    width: 100%
+    min-height: 350px
+    .founders__headline
+        font-family: $font-family
+        font-weight: 600
+        font-size: 36px
+        line-height: 42px
+        color: #63A4DA
+        position: relative
+        margin-top: 60px
+
+.swiper2
+    width: 100%
+    min-height: 350px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .swiper-wrapper2
+        width: 100%
+        height: 300px
+        display: flex
+        flex-direction: column
+        img
+            width: 300px
+            height: 300px
+            box-sizing: border-box
+            border: 6px solid #CC855D
+            border-radius: 300px
+            background: linear-gradient(0deg, rgba(204, 133, 93, 0.2), rgba(204, 133, 93, 0.2))
+
+.swiper2
+    min-height: 300px
+    flex-direction: column
+    .swiper-wrapper
+        .swiper-slide2
+            border: 6px solid #CC855D
+            box-sizing: border-box
+            box-shadow: none
+            border-radius: 300px
+            .slide__info
+                width: 100%
+                height: 100%
+                backdrop-filter: blur(10px) brightness(0.75)
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                transition: .3s
+                opacity: 0
+                p
+                color: #ffffff
+                font-size: 1.5em
+                font-weight: 500
+                line-height: 42px
+                span
+                    font-size: 1.7em
+                    font-weight: 600
+            .slide__info:hover
+                opacity: 1
+        .swiper-slide
+            height: 300px !important
+            object-fit: cover
+            background-size: cover
+            background-position: center
+        .swiper-slide_solyana
+            background-image: url(../img/team/solyana.jpg)
+        .swiper-slide_tori
+            background-image: url(../img/team/tori.jpg)
+        .swiper-slide_danya
+            background-image: url(../img/team/dania.jpg)
+        .swiper-slide_markiian
+            background-image: url(../img/team/markiian.jpg)
+        .swiper-slide_sonya_
+            background-image: url(../img/team/sonya_.jpg)
+        .swiper-slide_sonya
+            background-image: url(../img/team/sonya.jpg)
+        .swiper-slide_maksym
+            background-image: url(../img/team/maksym.jpg)
+        .swiper-slide_anna
+            background-image: url(../img/team/anna.jpg)
+        .swiper-slide_katya
+            background-image: url(../img/team/katya.jpg)
+        .swiper-slide_diana
+            background-image: url(../img/team/diana.jpg)
+        .swiper-slide_bereza
+            background-image: url(../img/team/bereza.jpg)
+        .swiper-slide_yarik
+            background-image: url(../img/team/yarik.jpg)
+
+.dark-bg
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    backdrop-filter: blur(10px)
+    display: none
+    .psycho__info
+        width: 400px
+        height: 600px
+        position: absolute
+        top: calc( 50% - 300px )
+        left: calc( 50% - 200px )
+        background-color: #ffffff
+        border: 2px solid #F2F1F1
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 20px
+        overflow-y: auto
+        overflow-x: hidden
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
+        padding: 0 20px
+        display: none
+        a
+            position: relative
+            top: 25px
+            left: 10px
+            text-decoration: none
+            color: #CC855D
+            font-size: 25px
+            width: 100%
+        .modal__heading
+            color: #CC855D
+            font-family: $font-family
+            font-weight: 700
+            font-size: 22px
+            line-height: 42px
+            width: 100%
+            margin-top: 20px
+            text-align: center
+        .modal__text
+            text-align: center
+            font-weight: 400
+            font-size: 22px
+            line-height: 35px
+            color: #3F2207
+            font-family: $font-family
+            margin-top: 20px
+
+.footer
+    width: 100%
+    min-height: 450px
+    background-color: #63A4DA
+    margin-top: 90px
+    color: #ffffff
+    .section__wrapper
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .footer__contacts
+            width: 60%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            .footer__headline
+                font-weight: 700
+                font-size: 24px
+                line-height: 42px
+                font-family: $font-family
+            .footer__contact
+                font-size: 24px
+                line-height: 42px
+                font-family: $font-family
+                font-weight: 500
+                color: #ffffff
+        .footer__partners
+            display: flex
+            width: 40%
+            flex-direction: column
+            justify-content: space-around
+            .partners__first-line
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 50%
+                a
+                    display: block
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: center
+                    width: 40%
+                    height: 100%
+                .uvs
+                    background-image: url(../img/partners/uvs.svg)
+                .upl
+                    background-image: url(../img/partners/upl.svg)
+            .partners__second-line
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 50%
+                .unatstvo
+                    display: block
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: center
+                    width: 40%
+                    height: 100%
+                    background-image: url(../img/partners/unatstvo.svg)
+
+.hamburger-menu
+    display: none
+
+#menu__toggle
+  opacity: 0
+
+  &:checked ~
+    .menu__btn > span
+      transform: rotate(45deg)
+
+      &::before
+        top: 0
+        transform: rotate(0)
+
+      &::after
+        top: 0
+        transform: rotate(90deg)
+
+    .menu__box
+      visibility: visible
+      left: 0
+
+.menu__btn
+  display: flex
+  align-items: center
+  position: fixed
+  top: 30px
+  left: 30px
+  width: 30px
+  height: 30px
+  cursor: pointer
+  z-index: 101
+
+  > span
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #3F2207
+    transition-duration: .25s
+
+    &::before, &::after
+      display: block
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: #3F2207
+      transition-duration: .25s
+
+    &::before
+      content: ''
+      top: -8px
+
+    &::after
+      content: ''
+      top: 8px
+
+.menu__box
+  display: block
+  position: fixed
+  visibility: hidden
+  top: 0
+  bottom: 0
+  left: -100%
+  width: 100vw
+  height: 100vh
+  margin: 0
+  z-index: 100
+  padding: 80px 0
+  list-style: none
+  backdrop-filter: blur(15px)
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2)
+  transition-duration: .25s
+
+.menu__item
+  display: block
+  padding: 12px 24px
+  font-family: $font-family
+  font-size: 1.7em
+  font-weight: 700
+  text-decoration: none
+  transition-duration: .25s
+  color: #3F2207
+
+  &:hover
+    background-color: #CFD8DC
+
+.text_padding-sides
+    padding: 0 20px
+
+@media screen and (max-height: 580px) 
+    .header__vector
+        display: none
+    .container .header .header__wrapper_display .header__down 
+        display: none
+
+    .section .section__wrapper .faq__info
+
+@media screen and (max-width: 1200px) 
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 36%
+            .section__headline_right::after
+                right: 36%
+            .content 
+                width: 100%
+                .text
+                    text-align: center
+                    width: 100%
+        .psychologists__swiper
+            margin-top: 60px
+    .slide__picture
+        background-size: 73%
+
+    .section .section__wrapper .faq__pic
+        width: 30%
+
+    .section .section__wrapper .faq__info
+        width: 65%
+
+@media screen and (max-width: 1100px)
+    .header__vector
+        display: none
+
+    .header__deco
+        display: none
+
+    .section
+        min-height: 450px
+        .section__wrapper
+            min-height: 100%
+            div
+                width: 100%
+
+    .section .section__wrapper .section__pic_about 
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position-x: center
+        background-position-y: center
+        height: 300px
+        margin-top: 50px
+
+    .section .section__wrapper
+        .faq__pic
+            display: none
+        .faq__info
+            width: 100%
+    
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 33%
+            .section__headline_right::after
+                right: 33%
+
+@media screen and (max-width: 900px)
+    .container .header
+        height: 700px
+
+    .container .header::after, .container .header::before
+        display: none
+    
+    .container .header .header__wrapper_display .header__down
+        display: none
+
+    .section_margin-top
+        margin-top: 0
+
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 30%
+            .section__headline_right::after
+                right: 30%
+
+    .footer .section__wrapper
+        flex-direction: column
+    
+    .footer .section__wrapper .footer__contacts
+        width: 100%
+        height: 400px
+
+    .footer .section__wrapper .footer__partners
+        width: 100%
+        height: 300px
+
+@media screen and (max-width: 850px) 
+    .container .header
+        max-height: 500px
+        .header__wrapper .nav
+            display: none
+
+    .section .section__wrapper .section__pic_about
+        height: 400px
+        background-size: 70%
+
+    .hamburger-menu
+        display: block
+
+@media screen and (max-width: 790px) 
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 26%
+            .section__headline_right::after
+                right: 26%
+
+@media screen and (max-width: 721px) 
+    .section .section__wrapper div
+        margin-top: 50px
+
+@media screen and (max-width: 665px)
+    .psychologists__swiper-wrapper
+        flex-direction: column
+        min-height: 650px
+    
+    .section .section__wrapper
+        .faq__info
+            width: 95%
+            margin-top: 0
+
+    #about
+        margin-top: 60px
+
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 20%
+            .section__headline_right::after
+                right: 20%
+
+    .faq__info details summary
+        padding: 0 20px
+
+    .faq__info details summary::before
+        display: none
+
+@media screen and (max-width: 700px) 
+    .section .section__wrapper .section__pic_about
+        background-size: 90%
+
+    .swiper-pagination > span
+        width: 20px !important
+        height: 10px !important
+        border-radius: 15px !important
+
+@media screen and (max-width: 500px) 
+    .faq__info details summary
+        width: 95%
+
+    .container
+        margin-top: 65px
+
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 15%
+            .section__headline_right::after
+                right: 15%
+
+@media screen and (max-width: 400px)
+    .container .header .header__title .header__headline
+        font-size: 52px
+
+    .psychologists .psycho__wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        article
+            max-width: 100%
+            .section__headline_right
+                text-align: center
+                margin-right: 0
+                position: relative
+            .section__headline_right::before, .section__headline_right::after
+                content: ''
+                position: absolute
+                display: block
+                width: 28px
+                height: 28px
+                background-image: url(../img/decoration/rectangle_heading.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                top: 7.5px
+            .section__headline_right::before
+                left: 7%
+            .section__headline_right::after
+                right: 7%
